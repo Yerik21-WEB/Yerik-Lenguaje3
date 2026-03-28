@@ -1,0 +1,157 @@
+{
+  "sectores": [
+    "San Luis",
+    "El Almirante",
+    "Megacentro",
+    "Invivienda",
+    "Charles de Gaulle",
+    "Autopista San Isidro",
+    "Puente Juan Carlos",
+    "Los Mina",
+    "Sabana Larga",
+    "Ensanche Ozama"
+  ],
+  "rutas": [
+    {
+      "id": "r1",
+      "tipo": "Guagua",
+      "nombre": "San Luis - Megacentro (Mella)",
+      "origen": "San Luis",
+      "destino": "Megacentro",
+      "tramos": [{ "tiempo_min": 30, "costo": 40 }]
+    },
+    {
+      "id": "r2",
+      "tipo": "OMSA",
+      "nombre": "Corredor Mella",
+      "origen": "San Luis",
+      "destino": "Megacentro",
+      "tramos": [{ "tiempo_min": 35, "costo": 35 }]
+    },
+    {
+      "id": "r3",
+      "tipo": "Guagua",
+      "nombre": "San Luis - El Almirante",
+      "origen": "San Luis",
+      "destino": "El Almirante",
+      "tramos": [{ "tiempo_min": 15, "costo": 35 }]
+    },
+    {
+      "id": "r4",
+      "tipo": "Carro",
+      "nombre": "El Almirante - Megacentro (Mella)",
+      "origen": "El Almirante",
+      "destino": "Megacentro",
+      "tramos": [{ "tiempo_min": 15, "costo": 40 }]
+    },
+    {
+      "id": "r5",
+      "tipo": "Guagua",
+      "nombre": "El Almirante - Invivienda",
+      "origen": "El Almirante",
+      "destino": "Invivienda",
+      "tramos": [{ "tiempo_min": 15, "costo": 35 }]
+    },
+    {
+      "id": "r6",
+      "tipo": "Carro",
+      "nombre": "Invivienda - Megacentro",
+      "origen": "Invivienda",
+      "destino": "Megacentro",
+      "tramos": [{ "tiempo_min": 20, "costo": 40 }]
+    },
+    {
+      "id": "r7",
+      "tipo": "Carro",
+      "nombre": "Megacentro - Los Mina (San Vicente)",
+      "origen": "Megacentro",
+      "destino": "Los Mina",
+      "tramos": [{ "tiempo_min": 15, "costo": 50 }]
+    },
+    {
+      "id": "r8",
+      "tipo": "Carro",
+      "nombre": "Megacentro - Sabana Larga (San Vicente)",
+      "origen": "Megacentro",
+      "destino": "Sabana Larga",
+      "tramos": [{ "tiempo_min": 20, "costo": 50 }]
+    },
+    {
+      "id": "r9",
+      "tipo": "OMSA",
+      "nombre": "Corredor San Vicente",
+      "origen": "Megacentro",
+      "destino": "Sabana Larga",
+      "tramos": [{ "tiempo_min": 25, "costo": 35 }]
+    },
+    {
+      "id": "r10",
+      "tipo": "Carro",
+      "nombre": "Sabana Larga - Puente Juan Carlos (Las Américas)",
+      "origen": "Sabana Larga",
+      "destino": "Puente Juan Carlos",
+      "tramos": [{ "tiempo_min": 15, "costo": 50 }]
+    },
+    {
+      "id": "r11",
+      "tipo": "Carro",
+      "nombre": "Ensanche Ozama - Puente Juan Carlos",
+      "origen": "Ensanche Ozama",
+      "destino": "Puente Juan Carlos",
+      "tramos": [{ "tiempo_min": 15, "costo": 50 }]
+    },
+    {
+      "id": "r12",
+      "tipo": "Carro",
+      "nombre": "Los Mina - Ensanche Ozama",
+      "origen": "Los Mina",
+      "destino": "Ensanche Ozama",
+      "tramos": [{ "tiempo_min": 20, "costo": 50 }]
+    },
+    {
+      "id": "r13",
+      "tipo": "Carro",
+      "nombre": "Invivienda - Charles de Gaulle",
+      "origen": "Invivienda",
+      "destino": "Charles de Gaulle",
+      "tramos": [{ "tiempo_min": 15, "costo": 40 }]
+    },
+    {
+      "id": "r14",
+      "tipo": "OMSA",
+      "nombre": "Corredor Charles de Gaulle",
+      "origen": "Charles de Gaulle",
+      "destino": "Puente Juan Carlos",
+      "tramos": [{ "tiempo_min": 25, "costo": 35 }]
+    },
+    {
+      "id": "r15",
+      "tipo": "Carro",
+      "nombre": "Sabana Larga - Charles (Cruce)",
+      "origen": "Sabana Larga",
+      "destino": "Charles de Gaulle",
+      "tramos": [{ "tiempo_min": 20, "costo": 50 }]
+    },
+    {
+      "id": "r16",
+      "tipo": "Carro",
+      "nombre": "Autopista San Isidro - Puente Juan Carlos (Las Américas)",
+      "origen": "Autopista San Isidro",
+      "destino": "Puente Juan Carlos",
+      "tramos": [{ "tiempo_min": 20, "costo": 45 }]
+    },
+    {
+      "id": "r17",
+      "tipo": "Carro",
+      "nombre": "Megacentro - Charles de Gaulle (Mella cruce)",
+      "origen": "Megacentro",
+      "destino": "Charles de Gaulle",
+      "tramos": [{ "tiempo_min": 10, "costo": 40 }]
+    }
+  ],
+  "alertas": [
+    { "id": "lluvia", "nombre": "Lluvia Fuerte", "tiempo_pct": 30, "costo_extra": 0 },
+    { "id": "hora_pico", "nombre": "Hora Pico", "tiempo_pct": 50, "costo_extra": 10 },
+    { "id": "paro", "nombre": "Paro Transporte", "tiempo_pct": 100, "costo_extra": 50 }
+  ]
+}

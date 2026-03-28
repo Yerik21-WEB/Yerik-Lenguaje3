@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuaguaTime RD | OMSA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">GuaguaTime RD 🚌</h1>
+        <p class="header__subtitle">Transporte Oficial Santo Domingo</p>
+        <button id="theme-toggle" class="btn--theme">Modo Oscuro</button>
+    </header>
+
+    <div class="container">
+        <main class="card">
+            <h2 class="card__title">📍 Planifica tu viaje</h2>
+  <form id="ruta-form">
+                <div class="form-group">
+                    <label class="form-label">Desde:</label>
+                    <select id="origen" class="form-select" required>
+                        <option value="">Selecciona origen...</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Megacentro">Megacentro</option>
+                        <option value="Invivienda">Invivienda</option>
+                        <option value="Autopista San Isidro">Autopista San Isidro</option>
+                        <option value="Puente Juan Carlos">Puente Juan Carlos</option>
+                        <option value="Sabana Larga">Sabana Larga</option>
+                        <option value="Los Mina">Los Mina</option>
+                        <option value="El Almirante">El Almirante</option>
+                        <option value="Ensanche Ozama">Ensanche Ozama</option>
+                        <option value="Charles de Gaulle">Charles de Gaulle</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Hacia:</label>
+                    <select id="destino" class="form-select" required>
+                        <option value="">Selecciona destino...</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Megacentro">Megacentro</option>
+                        <option value="Invivienda">Invivienda</option>
+                        <option value="Autopista San Isidro">Autopista San Isidro</option>
+                        <option value="Puente Juan Carlos">Puente Juan Carlos</option>
+                        <option value="Sabana Larga">Sabana Larga</option>
+                        <option value="Los Mina">Los Mina</option>
+                        <option value="El Almirante">El Almirante</option>
+                        <option value="Ensanche Ozama">Ensanche Ozama</option>
+                        <option value="Charles de Gaulle">Charles de Gaulle</option>
+                    </select>
+                </div>
+
+                <div class="alert-box">
+                    <strong>🚨 Condiciones:</strong>
+                    <label><input type="checkbox" id="lluvia" class="alerta-cb" value="lluvia"> Lluvia</label>
+                    <label><input type="checkbox" id="hora_pico" class="alerta-cb" value="hora_pico"> Hora Pico</label>
+                    <label><input type="checkbox" id="paro" class="alerta-cb" value="paro"> Paro</label>
+                </div>
+
+                <div class="form-group" style="margin-top: 15px;">
+                    <label class="form-label">Ordenar por:</label>
+                    <select id="criterio_orden" class="form-select">
+                        <option value="tiempo">Tiempo total (menor primero)</option>
+                        <option value="costo">Costo (menor primero)</option>
+                        <option value="transbordos">Transbordos (menor primero)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn--calcular" style="margin-top: 20px;">CALCULAR RUTA</button>
+            </form>
+        </main>
+
+        <section id="resultados"></section>
+        
+        <aside class="card" id="favoritos-section">
+            <h2 class="card__title">⭐ Tus Rutas Favoritas</h2>
+            <div id="lista-favoritos"></div>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 GuaguaTime RD - Simulador de Rutas</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
